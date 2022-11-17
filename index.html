@@ -3,11 +3,56 @@
 
 <head>
 	<title>Mystery Site</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+    body,h1 {font-family: "Raleway", sans-serif}
+    body, html {height: 100%}
+    .bgimg {
+    background-image: url(https://cdn.britannica.com/91/195191-050-273E4286/Top-Secret-typewriter.jpg);
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    }
+    .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('form').onsubmit = function(e) {
+                e.preventDefault();
+                if (document.querySelector('#number').value == 43) {
+                    document.getElementById("message").innerHTML = "This is the first clue";
+                };
+            };
+        });
+    </script>
+    </head>
 
 <body>
-    <form>
-        <input autofocus id="number" placeholder="Number" type="number">
-        <input type="submit">
-    </form>
+    <div class="bgimg w3-display-container w3-text-white">
+        <div class="w3-display-topleft w3-padding-large w3-xlarge" style="color: black;">
+          GO AWAY!
+        </div>
+        <div class="w3-display-middle">
+            <form class="w3-center">
+                <input id="number" style="text-align: center; font-size: 64px; max-width: 550px; font-weight: 600; margin-bottom: 10px;" class="w3-text-lime" autofocus id="number" placeholder="Secret number" type="number">
+                <input class="button" type="submit">
+            </form>
+            <hr class="w3-border-grey" style="margin:auto;width:40%">
+          <div style="background-color: black; opacity: 50;">
+            <p id="message" class="w3-large w3-center" style="font-weight: 600;">Don't read my secrets!</p>
+          </div>
+        </div>
+    </div> 
 </body>
