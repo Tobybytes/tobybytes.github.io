@@ -28,28 +28,17 @@
         }
     </style>
     <script>
+        let answers = ['43', '28', '12', '35', '2', '29'];
+        let i = 0;
+
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('form').onsubmit = function(e) {
                 e.preventDefault();
-                if (document.querySelector('#number').value === '43') {
+                if (document.querySelector('#number').value === answers[i]) {
                     document.getElementById("message").innerHTML = "This is the first clue";
+                    i++;
                 }
-		else if (document.querySelector('#number').value === '29') {
-                    document.getElementById("message").innerHTML = "This is the second clue";
-                }
-		else if (document.querySelector('#number').value === '2') {
-                    document.getElementById("message").innerHTML = "This is the third clue";
-                }
-		else if (document.querySelector('#number').value === '12') {
-                    document.getElementById("message").innerHTML = "This is the fourth clue";
-                }
-		else if (document.querySelector('#number').value === '35') {
-                    document.getElementById("message").innerHTML = "This is the fifth clue";
-                }
-		else if (document.querySelector('#number').value === '28') {
-                    document.getElementById("message").innerHTML = "This is the sixth clue";
-                }
-		else {
+                else {
                     document.getElementById("message").innerHTML = "Ha ha! Wrong number. My secret is safe.";
                 };
             };
