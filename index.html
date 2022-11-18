@@ -7,26 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <style>
-    body,h1 {font-family: "Raleway", sans-serif}
-    body, html {height: 100%}
-    .bgimg {
-    background-image: url(https://cdn.britannica.com/91/195191-050-273E4286/Top-Secret-typewriter.jpg);
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-    }
-    .button {
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+
     <script>
         let answers = ['43', '28', '12', '35', '2', '29'];
         let clues = ['First clue: ', 'Second clue: ', 'Third clue: ', 'Fourth clue: ', 'Fifth clue: ', 'Treat vouchers are hiding in the ...']
@@ -57,9 +39,9 @@
                 <input id="number" style="text-align: center; font-size: 64px; max-width: 350px; padding: 10px; margin: 25px; font-weight: 600; margin-bottom: 10px;" class="w3-text-lime" autofocus id="number" placeholder="Number" type="number">
                 <input class="button" style="margin: 25px;" type="submit">
             </form>
-          <div style="background-color: black; opacity: 50;">
-            <p id="message" class="w3-large w3-center" style="font-weight: 600;">Don't read my secrets!</p>
-          </div>
+            <div style="background-color: black; opacity: 50;">
+                <p id="message" class="w3-large w3-center" style="font-weight: 600;">Don't read my secrets!</p>
+            </div>
         </div>
     </div> 
 </body>
