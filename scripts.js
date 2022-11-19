@@ -5,11 +5,11 @@ let i = 0;
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('form').onsubmit = function(e) {
         e.preventDefault();
-        if (document.querySelector('#number').value === answers[i] AND i < 5) {
+        if (document.querySelector('#number').value === answers[i] && i < 6) {
             document.getElementById("message").innerHTML = clues[i];
             i++;
         }
-        else if (i == 5)
+        else if (i == 6)
             var canvas = document.createElement('canvas');
             canvas.id = "c";
             canvas.width = window.innerWidth;
