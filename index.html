@@ -9,19 +9,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
+    <script src="matrix.js"></script>
 </head>
 
 <body>
-    <div class="bgimg w3-display-container w3-text-white">
-        <div class="w3-display-topleft w3-padding-large w3-xlarge" style="color: black;">
+    <div id="lastpiece" class="bgimg w3-display-container w3-text-white">
+        <div id="goaway" class="w3-display-topleft w3-padding-large w3-xlarge" style="color: black;">
           GO AWAY!
         </div>
         <div class="w3-display-middle">
             <form class="w3-center">
                 <input id="number" style="text-align: center; font-size: 64px; max-width: 350px; padding: 10px; margin: 25px; font-weight: 600; margin-bottom: 10px;" class="w3-text-lime" autofocus id="number" placeholder="Number" type="number">
-                <input class="button" style="margin: 25px;" type="submit">
+                <input id="button" class="button" style="margin: 25px;" type="submit">
             </form>
-            <div style="background-color: black; opacity: 50;">
+            <div id="message div" style="background-color: black; opacity: 50;">
                 <p id="message" class="w3-large w3-center" style="font-weight: 600;">Don't read my secrets!</p>
             </div>
         </div>
