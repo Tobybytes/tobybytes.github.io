@@ -77,11 +77,12 @@ document.addEventListener('DOMContentLoaded', function() {
                         body.appendChild(ansp);
                         ansp = document.getElementsByTagName("p")[0];
                         ansp.innerHTML = 'Daddy, you should hide the vouchers INSIDE the Paw Patrol DVD';
-                        ansp.className = 'w3-display-middle';
                         ansp.style.color = '#0F0';
                         ansp.style.fontSize = '20pt';
                         body.style.backgroundColor = 'black';
-                        ansp.style.fontfamily = 'courier new';
+                        ansp.style.fontFamily = 'courier';
+                        ansp.style.fontWeight = 700;
+                        ansp.className = 'w3-display-middle';
                     }, 10000)
                 }
                 return false
