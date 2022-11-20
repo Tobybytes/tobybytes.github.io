@@ -2,7 +2,6 @@ let answers = ['43', '28', '12', '35', '2', '29'];
 let clues = ['First clue: ', 'Second clue: ', 'Third clue: ', 'Fourth clue: ', 'Fifth clue: ', 'Nooooooo!']
 let i = 0;
 
-
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('form').onsubmit = function() {
         while (i < 6)
@@ -34,17 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 ansdiv.className = "w3-display-middle";
                 ansp.style.color = "#0F0";
                 ansdiv.style.backgroundColor = "black";
-                ansdiv.width = "25%";
-                ansdiv.height = "15%";
+                ansdiv.width = "500";
+                ansdiv.height = "200";
                 body.appendChild(ansdiv);
                 body.appendChild(ansp);
+                ansp.innerHTML = 'Paw Patrol DVD';
             }, 5000)
-
-            setTimeout(function(){
-                ansp.innerHTML = 'Paw Patrol DVD'
-            }, 200)
-
-            return false
         }
     };
 });
