@@ -60,6 +60,24 @@ document.addEventListener('DOMContentLoaded', function() {
             if (document.querySelector('#number').value === answers[i]) {
                 document.getElementById("message").innerHTML = clues[i];
                 i++;
+                if (i==6) {
+                    let body = document.getElementsByTagName("body")[0];
+                    let div = document.getElementsByTagName("div")[0];
+                    let canvas = document.createElement('canvas');
+                    let ansp = document.createElement('p');
+                    div.remove(div);             
+                    canvas.id = "c";
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                    canvas.style.position = "absolute";
+                    body.appendChild(canvas);
+                    matrix();
+                    setTimeout(function(){
+                        canvas.remove(canvas);
+                        body.appendChild(ansp);
+                        ansp.innerHTML = 'Daddy, you should hide the vouchers INSIDE the Paw Patrol DVD';
+                    }, 5000)
+                }
                 return false
                 }
             else {
@@ -67,30 +85,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 return false
             };
 
-        if (i == 6) {
-            let body = document.getElementsByTagName("body")[0];
-            let div = document.getElementsByTagName("div")[0];
-            let canvas = document.createElement('canvas');
-            let ansdiv = document.createElement('div');
-            let ansp = document.createElement('p');
-            div.remove(div);             
-            canvas.id = "c";
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            canvas.style.position = "absolute";
-            body.appendChild(canvas);
-            matrix();
 
-            setTimeout(function(){
-                ansdiv.className = "w3-display-middle";
-                ansp.style.color = "#0F0";
-                ansdiv.style.backgroundColor = "black";
-                ansdiv.width = "500";
-                ansdiv.height = "200";
-                body.appendChild(ansdiv);
-                body.appendChild(ansp);
-                ansp.innerHTML = 'Paw Patrol DVD';
-            }, 5000)
         }
-    };
-});
+    });
