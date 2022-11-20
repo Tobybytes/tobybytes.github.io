@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         canvas.remove(canvas);
                         body.appendChild(ansp);
                         ansp = document.getElementsByTagName("p")[0];
-                        ansp.innerHTML = 'The vouchers will be safest in the Pink Panther DVD case';
+                        ansp.innerHTML = 'Hi Dad, I sent you some more vouchers. Dont lose them this time. Try putting them in the Pink Panther DVD case! Lots of love and cuddles! Nasty big bad secret boss villain.';
                         ansp.style.color = '#0F0';
                         ansp.style.fontSize = '20pt';
                         body.style.backgroundColor = 'black';
