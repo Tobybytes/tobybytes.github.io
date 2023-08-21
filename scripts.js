@@ -50,14 +50,14 @@ function matrix() {var c = document.getElementById("c");
     setInterval(draw, 33);
 }
 
-let answers = ['43', '28', '12', '35', '2', '29'];
+let answers = ['315', '16', '66', '20', '1078', 'MOVICARTON'];
 let clues = [
-    'First clue: Maybe in the cupboard under the stairs. Maybe in the drawer under the TV.', 
-'Second clue: Postman Pat Big Busy Book? Or Choo Choo the little blue train?', 
-'Third clue: Maybe Daddy moved the skittles. Where did Huw go?', 
-'Fourth clue: Yep, Jack was wrong. Time to play hide-n-seek lantern', 
-'Fifth clue: Why dont you take a break, you code breakers. You wont crack my final clue', 
-'Nooooooo!']
+    'You lot are rubbish. I should throw you away.', 
+'Do not bounce off one of these or you might end up in the bin.', 
+'I love song 07 on the keyboard. Uh uh uh ha ha ha hm hm hm HA HA', 
+'A mug you can dress up like pride and prejudice in.', 
+'This hat really is ghastly.', 
+'Noooooooooooooooooooooooooo! My codes!']
 let i = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         canvas.remove(canvas);
                         body.appendChild(ansp);
                         ansp = document.getElementsByTagName("p")[0];
-                        ansp.innerHTML = 'Hi Dad, I sent you some more vouchers. Dont lose them this time. Try putting them in the Pink Panther DVD case! Lots of love and cuddles! Nasty big bad secret boss villain.';
+                        ansp.innerHTML = 'It should be safe in the portal to Mortilee';
                         ansp.style.color = '#0F0';
                         ansp.style.fontSize = '20pt';
                         body.style.backgroundColor = 'black';
