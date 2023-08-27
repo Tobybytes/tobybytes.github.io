@@ -50,13 +50,13 @@ function matrix() {var c = document.getElementById("c");
     setInterval(draw, 33);
 }
 
-let answers = ['315', '16', '66', '20', '1078', 'MOVICARTON'];
+let answers = ['553', '52', '25', '6829', '129', '57'];
 let clues = [
-    'You lot are rubbish. I should throw you away.', 
-'Do not bounce off one of these or you might end up in the bin.', 
-'I love song 07 on the keyboard. Uh uh uh ha ha ha hm hm hm HA HA', 
-'A mug you can dress up like pride and prejudice in.', 
-'This hat really is ghastly.', 
+    'It is cold, don&#39t you think?', 
+'TIME for hide and seek', 
+'Good clues are like music to my ears', 
+'I Easter 2022 rocks!', 
+'Don&#39t find my next clue, or it is curtains for you, mate!', 
 'Noooooooooooooooooooooooooo! My codes!']
 let i = 0;
 
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         canvas.remove(canvas);
                         body.appendChild(ansp);
                         ansp = document.getElementsByTagName("p")[0];
-                        ansp.innerHTML = 'It should be safe in the portal to Mortilee';
+                        ansp.innerHTML = 'The treasure is hidden. What a lot of puzzles!';
                         ansp.style.color = '#0F0';
                         ansp.style.fontSize = '20pt';
                         body.style.backgroundColor = 'black';
