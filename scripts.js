@@ -50,13 +50,13 @@ function matrix() {var c = document.getElementById("c");
     setInterval(draw, 33);
 }
 
-let answers = ['553', '52', '25', '6829', '129', '57'];
+let answers = ['123', '63', '0800636262', '1761', '921', '35'];
 let clues = [
-    'It is cold, don&#39t you think?', 
-'TIME for hide and seek', 
-'Good clues are like music to my ears', 
-'I Easter 2022 rocks!', 
-'Don&#39t find my next clue, or it is curtains for you, mate!', 
+    'Have you ever seen a coaster that looks Scottish?', 
+'Reds, yellows, greens, blues, indigos, violets. I feel somethings is missing', 
+'Well if you&#39re not happy you had better make the call', 
+'Are these two still the usual two choices for TV at Nain and Tadcu&#39s?', 
+'Mr Tumble&#39s spotty drier!', 
 'Noooooooooooooooooooooooooo! My codes!']
 let i = 0;
 
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         canvas.remove(canvas);
                         body.appendChild(ansp);
                         ansp = document.getElementsByTagName("p")[0];
-                        ansp.innerHTML = 'The treasure is hidden. What a lot of puzzles!';
+                        ansp.innerHTML = 'Congratulations children. I hope you had a fantastic nutty breakfast hunt. The ticket is right under you nose. Or fingers.';
                         ansp.style.color = '#0F0';
                         ansp.style.fontSize = '20pt';
                         body.style.backgroundColor = 'black';
