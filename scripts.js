@@ -50,7 +50,7 @@ function matrix() {var c = document.getElementById("c");
     setInterval(draw, 33);
 }
 
-let answers = ['2001', '2274', '2153', '4312', '466', '487253'];
+let answers = ['2001', '466', '4312', '2153', '2274', '487253'];
 let clues = [
     'Morph, Tiger and Bella - such wonderful pets!\nThese feline friends won&#39t need the vets', 
 'Remember the name of the Narnia book?\nThe Lion, the Witch, and the place you should look', 
