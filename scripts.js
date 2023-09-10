@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         canvas.remove(canvas);
                         body.appendChild(ansp);
                         ansp = document.getElementsByTagName("p")[0];
-                        ansp.innerHTML = 'This hiding place is too hard, you'll see.<br>A game that we own, except for the Wii';
+                        ansp.innerHTML = 'This hiding place is too hard, you&#39ll see.<br>A game that we own, except for the Wii';
                         ansp.style.color = '#0F0';
                         ansp.style.fontSize = '20pt';
                         body.style.backgroundColor = 'black';
