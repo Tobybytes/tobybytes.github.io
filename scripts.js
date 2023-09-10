@@ -50,13 +50,13 @@ function matrix() {var c = document.getElementById("c");
     setInterval(draw, 33);
 }
 
-let answers = ['123', '63', '0800636262', '1761', '921', '35'];
+let answers = ['2001', '2274', '2153', '4312', '466', '487253'];
 let clues = [
-    'Have you ever seen a coaster that looks Scottish?', 
-'Reds, yellows, greens, blues, indigos, violets. I feel somethings is missing', 
-'Well if you&#39re not happy you had better make the call', 
-'Are these two still the usual two choices for TV at Nain and Tadcu&#39s?', 
-'Mr Tumble&#39s spotty drier!', 
+    'Morph, Tiger and Bella - such wonderful pets!\nThese feline friends won&#39t need the vets', 
+'Remember the name of the Narnia book?\nThe Lion, the Witch, and the place you should look', 
+'A place they speak Spanish which isn&#39t in Spain\nThe souveniors here will make everything plain', 
+'Tadcu keeps a record of all he has done\nIf you think you can, go find number one', 
+'This thing has a lid and a seat you can use\nWatch out for the water when you find the next clues', 
 'Noooooooooooooooooooooooooo! My codes!']
 let i = 0;
 
