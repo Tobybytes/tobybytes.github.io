@@ -52,8 +52,8 @@ function matrix() {var c = document.getElementById("c");
 
 let answers = ['2001', '466', '4312', '2153', '2274', '487253'];
 let clues = [
-    'Morph, Tiger and Bella - such wonderful pets!&#0DThese feline friends won&#39t need the vets', 
-'Remember the name of the Narnia book?&#0DThe Lion, the Witch, and the place you should look', 
+    'Morph, Tiger and Bella - such wonderful pets!&#13These feline friends won&#39t need the vets', 
+'Remember the name of the Narnia book?<br>The Lion, the Witch, and the place you should look', 
 'A place they speak Spanish which isn&#39t in Spain&#0DThe souveniors here will make everything plain', 
 'Tadcu keeps a record of all he has done&#0DIf you think you can, go find number one', 
 'This thing has a lid and a seat you can use&#0DWatch out for the water when you find the next clues', 
