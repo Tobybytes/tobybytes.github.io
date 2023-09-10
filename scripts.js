@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         canvas.remove(canvas);
                         body.appendChild(ansp);
                         ansp = document.getElementsByTagName("p")[0];
-                        ansp.innerHTML = 'Congratulations children. I hope you had a fantastic nutty breakfast hunt. The ticket is right under you nose. Or fingers.';
+                        ansp.innerHTML = 'This hiding place is too hard, you'll see.<br>A game that we own, except for the Wii';
                         ansp.style.color = '#0F0';
                         ansp.style.fontSize = '20pt';
                         body.style.backgroundColor = 'black';
