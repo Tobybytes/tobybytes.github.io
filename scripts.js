@@ -50,13 +50,13 @@ function matrix() {var c = document.getElementById("c");
     setInterval(draw, 33);
 }
 
-let answers = ['2001', '466', '4312', '2153', '2274', '487253'];
+let answers = ['63', '0846', '423', '3488', '71652', '8244'];
 let clues = [
-    'Morph, Tiger and Bella - such wonderful pets!<br>These feline friends won&#39t need the vets', 
-'Remember the name of the Narnia book?<br>The Lion, the Witch, and the place you should look', 
-'A place they speak Spanish which isn&#39t in Spain<br>The souveniors here will make everything plain', 
-'Tadcu keeps a record of all he has done<br>If you think you can, go find number one', 
-'This thing has a lid and a seat you can use<br>Watch out for the water when you find the next clues', 
+'This box has more legs than a table', 
+'Slide along. &#9632 &#9651 &#9668 &#9699 &#9723', 
+'I have keys but no locks. You can play me, but I&#39m not a board game.', 
+'Notice how the clues have hidden with something like the puzzle? The next puzzle is very old.', 
+'Nothing left to find - or so I hope! Solve this one here. Blue, yellow, red, big.', 
 'Noooooooooooooooooooooooooo! My codes!']
 let i = 0;
 
@@ -82,14 +82,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         canvas.remove(canvas);
                         body.appendChild(ansp);
                         ansp = document.getElementsByTagName("p")[0];
-                        ansp.innerHTML = 'This hiding place is too hard, you&#39ll see.<br>A game that we own, except for the Wii';
+                        ansp.innerHTML = 'Well, you see, everything hid with something they are quite like. You are looking for a golden ticket for chocolate.';
                         ansp.style.color = '#0F0';
                         ansp.style.fontSize = '20pt';
                         body.style.backgroundColor = 'black';
                         ansp.style.fontFamily = 'courier';
                         ansp.style.fontWeight = 700;
                         ansp.className = 'w3-display-middle';
-                    }, 10000)
+                    }, 5000)
                 }
                 return false
                 }
