@@ -100,12 +100,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             } else {
                 // Wrong answer
-                if (i > 0) {
+                 if (i > 0) {
+                    let clueIndex = i-1
                     // If we've progressed past the first question, show the current clue
                     document.getElementById("message").innerHTML = 
                         "<strong>Ha ha! Wrong! My secret is safe.</strong><br><br>" + 
-                        "<em>Think again:</em> " + clues[i];
-                } else {
+                        "<em>Think again:</em> " + clues[clueIndex];
+                 } else {
                     // For i=0, just show the wrong message with no clue
                     document.getElementById("message").innerHTML = "Ha ha! Wrong! My secret is safe.";
                 }
