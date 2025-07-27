@@ -50,21 +50,30 @@ function matrix() {var c = document.getElementById("c");
     setInterval(draw, 33);
 }
 
-let answers = ['63', '0846', '423', '3488', '71652', '8244'];
-let clues = [
-'This box has more legs than a table', 
-'Slide along. &#9632 &#9651 &#9668 &#9699 &#9723', 
-'I have keys but no locks. You can play me, but I&#39m not a board game.', 
-'Notice how the clues have hidden with something like the puzzle? The next puzzle is very old.', 
-'Nothing left to find - or so I hope! Solve this one here. Blue, yellow, red, big.', 
-'Noooooooooooooooooooooooooo! My codes!']
+let firstAnswer = ''
+let firstClue = ''
+let secondAnswer = ''
+let secondClue = ''
+let thirdAnswer = ''
+let thirdClue = ''
+let fourthAnswer = ''
+let fourthClue = ''
+let fifthAnswer = ''
+let fifthClue = ''
+let finalAnswer = ''
+
+let answers = [firstAnswer, secondAnswer, thirdAnswer, fourthAnswer, fifthAnswer, finalAnswer];
+let clues = [firstClue, secondClue, thirdClue, fourthClue, fifthClue,'Noooooooooooooooooooooooooo! My codes!']
 let i = 0;
+let currentClue = ''; // Store the current clue
+let finalMessage = ''
 
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('form').onsubmit = function() {
         while (i < 6)
             if (document.querySelector('#number').value === answers[i]) {
-                document.getElementById("message").innerHTML = clues[i];
+                currentClue = clues[i]; // Store the clue
+                document.getElementById("message").innerHTML = currentClue;
                 i++;
                 if (i==6) {
                     let body = document.getElementsByTagName("body")[0];
@@ -82,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         canvas.remove(canvas);
                         body.appendChild(ansp);
                         ansp = document.getElementsByTagName("p")[0];
-                        ansp.innerHTML = 'Well, you see, everything hid with something they are quite like. You are looking for a golden ticket for chocolate.';
+                        ansp.innerHTML = finalMessage;
                         ansp.style.color = '#0F0';
                         ansp.style.fontSize = '20pt';
                         body.style.backgroundColor = 'black';
@@ -94,10 +103,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 return false
                 }
             else {
-                document.getElementById("message").innerHTML = "Ha ha! Wrong number. My secret is safe.";
+                // Display incorrect message with the current clue
+                if (currentClue) {
+                    document.getElementById("message").innerHTML = 
+                        "<strong>Ha ha! Wrong! My secret is safe.</strong><br><br>" + 
+                        "<em>Think again:</em> " + currentClue;
+                } else {
+                    document.getElementById("message").innerHTML = "Ha ha! Wrong! My secret is safe.";
+                }
                 return false
             };
-
-
         }
     });
