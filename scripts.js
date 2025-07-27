@@ -60,7 +60,7 @@ let fourthAnswer = '549764'
 let fourthClue = 'Hopefully you found all the pieces. Clue: lowercase.'
 let finalAnswer = 'misunderstanding'
 
-let answers = [firstAnswer, secondAnswer, thirdAnswer, fourthAnswer, fifthAnswer];
+let answers = [firstAnswer, secondAnswer, thirdAnswer, fourthAnswer, finalAnswer];
 let clues = [firstClue, secondClue, thirdClue, fourthClue,'Noooooooooooooooooooooooooo! My codes!']
 let i = 0;
 let totalAnswers = 5
