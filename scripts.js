@@ -59,27 +59,26 @@ let thirdClue = 'It is all in the magazine for this one. The code is 6 long.'
 let fourthAnswer = '549764'
 let fourthClue = 'Hopefully you found all the pieces. Clue: lowercase.'
 let finalAnswer = 'misunderstanding'
-
 let answers = [firstAnswer, secondAnswer, thirdAnswer, fourthAnswer, finalAnswer];
 let clues = [firstClue, secondClue, thirdClue, fourthClue,'Noooooooooooooooooooooooooo! My codes!']
 let i = 0;
 let totalAnswers = 5
-let currentClue = ''; // Store the current clue
 let finalMessage = 'Well done, you completed the Pugh-Cowton 2025 Summer Escape Puzzle!'
 
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('form').onsubmit = function() {
-        while (i < totalAnsweres)
+        if (i < totalAnswers) {
             if (document.querySelector('#number').value === answers[i]) {
-                currentClue = clues[i]; // Store the clue
-                document.getElementById("message").innerHTML = currentClue;
+                // Correct answer
+                document.getElementById("message").innerHTML = clues[i];
                 i++;
-                if (i==totalAnswers) {
+                
+                if (i == totalAnswers) {
                     let body = document.getElementsByTagName("body")[0];
                     let div = document.getElementsByTagName("div")[0];
                     let canvas = document.createElement('canvas');
                     let ansp = document.createElement('p');
-                    div.remove(div);             
+                    div.remove();             
                     canvas.id = "c";
                     canvas.width = window.innerWidth;
                     canvas.height = window.innerHeight;
@@ -87,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     body.appendChild(canvas);
                     matrix();
                     setTimeout(function(){
-                        canvas.remove(canvas);
+                        canvas.remove();
                         body.appendChild(ansp);
                         ansp = document.getElementsByTagName("p")[0];
                         ansp.innerHTML = finalMessage;
@@ -95,22 +94,23 @@ document.addEventListener('DOMContentLoaded', function() {
                         ansp.style.fontSize = '20pt';
                         body.style.backgroundColor = 'black';
                         ansp.style.fontFamily = 'courier';
-                        ansp.style.fontWeight = 700;
+                        ansp.style.fontWeight = '700';
                         ansp.className = 'w3-display-middle';
                     }, 5000)
                 }
-                return false
-                }
-            else {
-                // Display incorrect message with the current clue
-                if (currentClue) {
+            } else {
+                // Wrong answer
+                if (i > 0) {
+                    // If we've progressed past the first question, show the current clue
                     document.getElementById("message").innerHTML = 
                         "<strong>Ha ha! Wrong! My secret is safe.</strong><br><br>" + 
-                        "<em>Think again:</em> " + currentClue;
+                        "<em>Think again:</em> " + clues[i];
                 } else {
+                    // For i=0, just show the wrong message with no clue
                     document.getElementById("message").innerHTML = "Ha ha! Wrong! My secret is safe.";
                 }
-                return false
-            };
+            }
         }
-    });
+        return false; // Prevent form submission
+    };
+});
