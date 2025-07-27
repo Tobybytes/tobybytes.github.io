@@ -50,7 +50,7 @@ function matrix() {var c = document.getElementById("c");
     setInterval(draw, 33);
 }
 
-let firstAnswer = '216'
+let firstAnswer = '270'
 let firstClue = 'What is the longest possible snake you can make with the continuo pieces? (Give a number e.g. 3)'
 let secondAnswer = '11'
 let secondClue = 'Sardines: red, green, yellow, orange. (Four digit code)'
