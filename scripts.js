@@ -50,32 +50,32 @@ function matrix() {var c = document.getElementById("c");
     setInterval(draw, 33);
 }
 
-let firstAnswer = ''
-let firstClue = ''
-let secondAnswer = ''
-let secondClue = ''
-let thirdAnswer = ''
-let thirdClue = ''
-let fourthAnswer = ''
-let fourthClue = ''
-let fifthAnswer = ''
-let fifthClue = ''
-let finalAnswer = ''
+let firstAnswer = '216'
+let firstClue = 'What is the longest possible snake you can make with the continuo pieces? (Give a number e.g. 3)'
+let secondAnswer = '11'
+let secondClue = 'Sardines: red, green, yellow, orange. (Four digit code)'
+let thirdAnswer = '6967'
+let thirdClue = 'It is all in the magazine for this one. The code is 6 long.'
+let fourthAnswer = '549764'
+let fourthClue = 'Hopefully you found all the pieces.'
+let finalAnswer = 'misunderstanding'
 
-let answers = [firstAnswer, secondAnswer, thirdAnswer, fourthAnswer, fifthAnswer, finalAnswer];
-let clues = [firstClue, secondClue, thirdClue, fourthClue, fifthClue,'Noooooooooooooooooooooooooo! My codes!']
+let answers = [firstAnswer, secondAnswer, thirdAnswer, fourthAnswer, fifthAnswer];
+let clues = [firstClue, secondClue, thirdClue, fourthClue,'Noooooooooooooooooooooooooo! My codes!']
 let i = 0;
+let totalAnswers = 5
 let currentClue = ''; // Store the current clue
-let finalMessage = ''
-
+let finalMessage = 'Well done, you completed the Pugh-Cowton 2025 Summer Escape Puzzle!'
+continuo : longest possible snake of a colour = 11
+=
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('form').onsubmit = function() {
-        while (i < 6)
+        while (i < totalAnsweres)
             if (document.querySelector('#number').value === answers[i]) {
                 currentClue = clues[i]; // Store the clue
                 document.getElementById("message").innerHTML = currentClue;
                 i++;
-                if (i==6) {
+                if (i==totalAnswers) {
                     let body = document.getElementsByTagName("body")[0];
                     let div = document.getElementsByTagName("div")[0];
                     let canvas = document.createElement('canvas');
