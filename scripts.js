@@ -57,7 +57,7 @@ let secondClue = 'Sardines: red, green, yellow, orange. (Four digit code)'
 let thirdAnswer = '6967'
 let thirdClue = 'It is all in the magazine for this one. The code is 6 long.'
 let fourthAnswer = '549764'
-let fourthClue = 'Hopefully you found all the pieces.'
+let fourthClue = 'Hopefully you found all the pieces. Clue: lowercase.'
 let finalAnswer = 'misunderstanding'
 
 let answers = [firstAnswer, secondAnswer, thirdAnswer, fourthAnswer, fifthAnswer];
@@ -66,8 +66,7 @@ let i = 0;
 let totalAnswers = 5
 let currentClue = ''; // Store the current clue
 let finalMessage = 'Well done, you completed the Pugh-Cowton 2025 Summer Escape Puzzle!'
-continuo : longest possible snake of a colour = 11
-=
+
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('form').onsubmit = function() {
         while (i < totalAnsweres)
